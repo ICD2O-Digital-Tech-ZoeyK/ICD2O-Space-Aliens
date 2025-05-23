@@ -5,7 +5,7 @@ class SplashScene extends Phaser.Scene {
     //This method is the constructor
 
     constructor() {
-        super({ key: "splashScene"})
+        super({ key: "splashScene" })
     }
     /**
      *This method is called by the scene manager when the scene starts,
@@ -13,7 +13,7 @@ class SplashScene extends Phaser.Scene {
       @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
      */
     
-    Infinity(data) {
+    init(data) {
         this.cameras.main.setBackgroundColor("ffffff")
     }
       //Can be defined on your own Scenes.
@@ -25,7 +25,7 @@ class SplashScene extends Phaser.Scene {
     /**
      * Can be defined on your own Scenes.
      * Use it to create your game objects.
-     * @param {obhject} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+     * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
      */
     create(data) {
         // pass
@@ -38,7 +38,7 @@ class SplashScene extends Phaser.Scene {
      * @param {number} delta - The delta time in ms since the last frame.
      */
     update(time, delta) {
-        // pass
+        this.scene.switch("titleScene")
     }
 }
 

@@ -2,7 +2,7 @@
 
 //scene import statements
 import SplashScene from "./splashScene.js"
-import titleScene from "./titleScene.js"
+import TitleScene from "./titleScene.js"
 
 //create the new scenes
 const splashScene = new SplashScene()
@@ -17,25 +17,25 @@ const config = {
     width: 1920,
     height: 1080,
     physics: {
-        default: 'arcade',
+        default: "arcade",
         arcade: {
-            debug: true
-        }
+            debug: true,
+        },
     },
     // Set Background Color
     backgroundColor: 0x5f6e7a,
     scale: {
-        mode: Phaser, Scale, FIT,
+        mode: Phaser,Scale,FIT,
         // we place it in the middle of the page.
-        autoCenter: Phaser,Scale,CENTER_BOTH
-    }
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
 }
 
 const game = new Phaser.Game(config)
 //console.log(game)
 
 //load scenes
-game.scene.add("splashScene", SplashScene)
+game.scene.add("splashScene", splashScene)
 game.scene.add("titlescene", titleScene)
 
 //the start scene

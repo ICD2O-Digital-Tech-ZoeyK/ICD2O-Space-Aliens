@@ -8,7 +8,7 @@ import MenuScene from "./menuScene.js"
 //create the new scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
-const menuScene = new <MenuScene()
+const menuScene = new MenuScene()
 
 /**
  * Start Phaser Game

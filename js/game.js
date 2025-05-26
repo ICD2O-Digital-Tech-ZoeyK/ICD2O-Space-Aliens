@@ -25,7 +25,7 @@ const config = {
     // Set Background Color
     backgroundColor: 0x5f6e7a,
     scale: {
-        mode: Phaser,Scale,FIT,
+        mode: Phaser.Scale.FIT,
         // we place it in the middle of the page.
         autoCenter: Phaser.Scale.CENTER_BOTH,
     },
@@ -36,7 +36,7 @@ const game = new Phaser.Game(config)
 
 //load scenes
 game.scene.add("splashScene", splashScene)
-game.scene.add("titlescene", titleScene)
+game.scene.add("titleScene", titleScene)
 
 //the start scene
 game.scene.start("splashScene")

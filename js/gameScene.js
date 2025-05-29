@@ -41,8 +41,8 @@ class GameScene extends Phaser. Scene {
         //called 60 times a second, hopefully!
         
         const keyLeftObj = this.input.keyboard.addKey("LEFT")
-        const keyRightObj = this.input.keyboard.addkey("RIGHT")
-        const keySpaceObj = this.input.keyboard.addkey("SPACE")
+        const keyRightObj = this.input.keyboard.addKey("RIGHT")
+        const keySpaceObj = this.input.keyboard.addKey("SPACE")
 
         if (keyLeftObj.isDown === true) {
                 this.ship.x -= 15

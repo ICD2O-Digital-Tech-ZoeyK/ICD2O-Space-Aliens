@@ -28,7 +28,7 @@ const config = {
         } 
     },
     // set background color
-    backgroundColor: Oxffffff,
+    backgroundColor: 0xffffff,
     scale: {
         mode: Phaser.Scale.FIT,
         // we place it in the middle of the page.

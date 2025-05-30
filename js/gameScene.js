@@ -48,7 +48,7 @@ class GameScene extends Phaser. Scene {
             console.log("Left key pressed.")
             this.ship.x -= 15
             if (this.ship.x < 0) {
-                this.ship.x = 0
+                this.ship.x = 1920
             }
 
         }

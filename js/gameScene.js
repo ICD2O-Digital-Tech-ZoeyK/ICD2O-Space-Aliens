@@ -45,7 +45,7 @@ class GameScene extends Phaser. Scene {
         const keySpaceObj = this.input.keyboard.addKey("SPACE")
 
         if (keyLeftObj.isDown === true) {
-                this.ship.x -= 15
+            this.ship.x -= 15
             if (this.ship.x < 0) {
                     this.ship.x = 0
             }

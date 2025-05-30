@@ -57,7 +57,7 @@ class GameScene extends Phaser. Scene {
             console.log("Right key pressed.")
             this.ship.x += 15
             if (this.ship.x > 1920) {
-                this.ship.x = 1920
+                this.ship.x = 0
             }
 
         }

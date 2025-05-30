@@ -19,7 +19,7 @@ class GameScene extends Phaser. Scene {
     }
 
     preload () {
-        console.log('Game Scene')
+        console.log("Game Scene")
         
         // images
         this.load.image('starBackground', 'assets/starBackground.png')
@@ -45,6 +45,7 @@ class GameScene extends Phaser. Scene {
         const keySpaceObj = this.input.keyboard.addKey("SPACE")
 
         if (keyLeftObj.isDown === true) {
+            console.log("Left key pressed.")
             this.ship.x -= 15
             if (this.ship.x < 0) {
                 this.ship.x = 0
@@ -53,6 +54,7 @@ class GameScene extends Phaser. Scene {
         }
         
         if (keyRightObj.isDown === true) {
+            console.log("Right key pressed.")
             this.ship.x += 15
             if (this.ship.x > 1920) {
                 this.ship.x = 1920
@@ -61,6 +63,7 @@ class GameScene extends Phaser. Scene {
         }
 
         if (keySpaceObj.isDown === true) {
+            console.log("Space pressed.")
             if (this.fireMissile === false) {
                 //fire missiles
                 this.fireMissile = true

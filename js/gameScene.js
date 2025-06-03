@@ -53,6 +53,7 @@ class GameScene extends Phaser.Scene {
         this.background.setOrigin(0, 0)
         
         this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
+        this.scoreText = this.add.text(10, 10, "Score: 0", this.scoreTextStyle)
 
         //create a group for the missiles
         this.missileGroup = this.physics.add.group()
@@ -93,6 +94,10 @@ class GameScene extends Phaser.Scene {
         const keyLeftObj = this.input.keyboard.addKey("LEFT")
         const keyRightObj = this.input.keyboard.addKey("RIGHT")
         const keySpaceObj = this.input.keyboard.addKey("SPACE")
+
+        if (!this.ship) {
+            return
+        }
 
         if (keyLeftObj.isDown === true) {
             console.log("Left key pressed.")
